@@ -4,7 +4,9 @@ Plataforma educativa en español, construida como sitio estático para publicar 
 
 ## Cursos y participación
 
-Cada lección incluye una explicación de su idea clave, una práctica guiada relacionada con un proyecto final del curso y una pregunta para reflexionar sobre el resultado. Escribe qué probaste y qué aprendiste para completar la práctica; el borrador se conserva en este navegador. Al completar la lección, la respuesta y el avance se guardan en la nube si iniciaste sesión con Supabase; sin configuración, quedan en este dispositivo. Cada curso termina con un cuestionario corto de repaso.
+Cada lección incluye una explicación, una demostración interactiva de tres pasos, materiales necesarios, una práctica numerada y una pregunta para revisar lo aprendido. Escribe qué probaste y qué aprendiste para completar la práctica. El borrador se conserva en este navegador; al completar una lección, la respuesta y el avance se guardan en la nube si iniciaste sesión con Supabase. Cada curso termina con un cuestionario corto que explica por qué una respuesta es correcta.
+
+**Sobre los videos:** el sitio no tenía videos reales; el control anterior era solo un dibujo y no reproducía nada. Ahora cada lección lo explica claramente y ofrece una guía visual interactiva, sin video ni sonido, que puede avanzar sola cada cuatro segundos o recorrerse con los botones **Anterior** y **Siguiente**. También hay un enlace directo a la práctica. La guía no depende de videos, audio ni servicios externos.
 
 Los proyectos finales son una página personal publicada, un juego hecho con Python, un prototipo móvil en Figma, una página interactiva, un flujo de asistente para una tarea cotidiana y un informe con datos, respectivamente.
 

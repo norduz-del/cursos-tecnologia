@@ -1,23 +1,23 @@
 const courses = [
-  { id: "html-css", title: "Tu primera página web", category: "Desarrollo web", level: "Desde cero", duration: "3 h 20 min", lessons: 8, color: "lilac", icon: "⌘", description: "Crea una página web desde cero y descubre cómo el código transforma una idea en algo que puedes compartir con el mundo.", instructor: "Lucía Torres", initials: "LT", lessonsList: ["Cómo funciona la web", "Tu primer documento HTML", "Dale estilo con CSS", "Colores y tipografía", "Diseña para móvil", "Imágenes y enlaces", "Tu página personal", "Publica tu proyecto"], quiz: { question: "¿Qué lenguaje usamos para definir la estructura de una página web?", options: ["CSS", "HTML", "JavaScript"], answer: 1 } },
-  { id: "python", title: "Python para mentes curiosas", category: "Datos e IA", level: "Desde cero", duration: "4 h 10 min", lessons: 10, color: "peach", icon: "⌘", description: "Da tus primeros pasos en programación con un lenguaje sencillo, útil y lleno de posibilidades.", instructor: "Mateo Ríos", initials: "MR", lessonsList: ["Pensar como programador", "Tu primer programa", "Datos y variables", "Decisiones con if", "Repetir con bucles", "Listas que organizan", "Funciones útiles", "Explora tus datos", "Mini proyecto: adivina", "Próximos pasos"], quiz: { question: "¿Qué palabra usamos en Python para definir una función?", options: ["function", "def", "make"], answer: 1 } },
-  { id: "figma", title: "Diseña ideas con Figma", category: "Diseño digital", level: "Principiante", duration: "2 h 45 min", lessons: 7, color: "mint", icon: "✳", description: "Convierte ideas en diseños digitales claros. Aprende los fundamentos del diseño de interfaces mientras construyes una app.", instructor: "Sofía Vidal", initials: "SV", lessonsList: ["Ideas y diseño digital", "Explora Figma", "Color y contraste", "Tipografía con intención", "Componentes reutilizables", "Diseña una app", "Comparte tu prototipo"], quiz: { question: "¿Qué principio ayuda a que el texto sea fácil de leer?", options: ["Contraste", "Decoración", "Saturación"], answer: 0 } },
-  { id: "javascript", title: "JavaScript: hazlo interactivo", category: "Desarrollo web", level: "Principiante", duration: "5 h 00 min", lessons: 12, color: "yellow", icon: "↗", description: "Añade interacción a tus páginas web y crea experiencias que responden a las personas.", instructor: "Nicolás León", initials: "NL", lessonsList: ["De la página a la acción", "Variables y valores", "Texto y números", "Botones que responden", "Decisiones en código", "Listas dinámicas", "Funciones", "El DOM", "Eventos", "Construye un contador", "Construye un juego", "Sigue aprendiendo"], quiz: { question: "¿Qué usamos en JavaScript para reaccionar a un clic?", options: ["Un evento", "Un estilo", "Una etiqueta"], answer: 0 } },
-  { id: "ia", title: "Inteligencia artificial en tu día", category: "Datos e IA", level: "Principiante", duration: "2 h 30 min", lessons: 6, color: "blue", icon: "✧", description: "Entiende cómo funciona la IA generativa y aprende a usarla con criterio en tu vida y trabajo.", instructor: "Valentina Cruz", initials: "VC", lessonsList: ["Qué es (y qué no es) la IA", "Cómo aprende un modelo", "Prompts claros y útiles", "Imágenes con IA", "Límites y responsabilidad", "Tu asistente personal"], quiz: { question: "¿Qué ayuda a obtener una respuesta más útil de una IA?", options: ["Una instrucción clara y específica", "Escribir más rápido", "Usar palabras complicadas"], answer: 0 } },
-  { id: "datos", title: "Tus primeros pasos con datos", category: "Datos e IA", level: "Desde cero", duration: "3 h 00 min", lessons: 8, color: "rose", icon: "◌", description: "Aprende a leer, ordenar y contar historias con datos usando hojas de cálculo.", instructor: "Diego Acosta", initials: "DA", lessonsList: ["Preguntas que cuentan", "Ordena tus datos", "Filtra lo importante", "Fórmulas cotidianas", "Gráficos que explican", "Encuentra patrones", "Cuenta una historia", "Tu primer informe"], quiz: { question: "¿Qué tipo de gráfico suele funcionar bien para comparar categorías?", options: ["Gráfico de barras", "Mapa de calor siempre", "Texto sin ordenar"], answer: 0 } },
+  { id: "html-css", title: "Tu primera página web", category: "Desarrollo web", level: "Desde cero", duration: "3 h 20 min", lessons: 8, color: "lilac", icon: "⌘", description: "Crea una página web desde cero y descubre cómo el código transforma una idea en algo que puedes compartir con el mundo.", instructor: "Lucía Torres", initials: "LT", lessonsList: ["Cómo funciona la web", "Tu primer documento HTML", "Dale estilo con CSS", "Colores y tipografía", "Diseña para móvil", "Imágenes y enlaces", "Tu página personal", "Publica tu proyecto"], quiz: { question: "¿Qué lenguaje usamos para definir la estructura de una página web?", options: ["CSS", "HTML", "JavaScript"], answer: 1, explanation: "HTML pone cada parte del contenido en su lugar. CSS cambia la apariencia." } },
+  { id: "python", title: "Python para mentes curiosas", category: "Datos e IA", level: "Desde cero", duration: "4 h 10 min", lessons: 10, color: "peach", icon: "⌘", description: "Da tus primeros pasos en programación con un lenguaje sencillo, útil y lleno de posibilidades.", instructor: "Mateo Ríos", initials: "MR", lessonsList: ["Pensar como programador", "Tu primer programa", "Datos y variables", "Decisiones con if", "Repetir con bucles", "Listas que organizan", "Funciones útiles", "Explora tus datos", "Mini proyecto: adivina", "Próximos pasos"], quiz: { question: "¿Qué palabra usamos en Python para definir una función?", options: ["function", "def", "make"], answer: 1, explanation: "En Python, `def` empieza la definición de una función." } },
+  { id: "figma", title: "Diseña ideas con Figma", category: "Diseño digital", level: "Principiante", duration: "2 h 45 min", lessons: 7, color: "mint", icon: "✳", description: "Convierte ideas en diseños digitales claros. Aprende los fundamentos del diseño de interfaces mientras construyes una app.", instructor: "Sofía Vidal", initials: "SV", lessonsList: ["Ideas y diseño digital", "Explora Figma", "Color y contraste", "Tipografía con intención", "Componentes reutilizables", "Diseña una app", "Comparte tu prototipo"], quiz: { question: "¿Qué principio ayuda a que el texto sea fácil de leer?", options: ["Contraste", "Decoración", "Saturación"], answer: 0, explanation: "El contraste hace que las letras se distingan del fondo." } },
+  { id: "javascript", title: "JavaScript: hazlo interactivo", category: "Desarrollo web", level: "Principiante", duration: "5 h 00 min", lessons: 12, color: "yellow", icon: "↗", description: "Añade interacción a tus páginas web y crea experiencias que responden a las personas.", instructor: "Nicolás León", initials: "NL", lessonsList: ["De la página a la acción", "Variables y valores", "Texto y números", "Botones que responden", "Decisiones en código", "Listas dinámicas", "Funciones", "El DOM", "Eventos", "Construye un contador", "Construye un juego", "Sigue aprendiendo"], quiz: { question: "¿Qué usamos en JavaScript para reaccionar a un clic?", options: ["Un evento", "Un estilo", "Una etiqueta"], answer: 0, explanation: "El evento de clic avisa al programa que alguien pulsó el botón." } },
+  { id: "ia", title: "Inteligencia artificial en tu día", category: "Datos e IA", level: "Principiante", duration: "2 h 30 min", lessons: 6, color: "blue", icon: "✧", description: "Entiende cómo funciona la IA generativa y aprende a usarla con criterio en tu vida y trabajo.", instructor: "Valentina Cruz", initials: "VC", lessonsList: ["Qué es (y qué no es) la IA", "Cómo aprende un modelo", "Prompts claros y útiles", "Imágenes con IA", "Límites y responsabilidad", "Tu asistente personal"], quiz: { question: "¿Qué ayuda a obtener una respuesta más útil de una IA?", options: ["Una instrucción clara y específica", "Escribir más rápido", "Usar palabras complicadas"], answer: 0, explanation: "Una petición clara le dice a la IA qué necesitas y en qué formato." } },
+  { id: "datos", title: "Tus primeros pasos con datos", category: "Datos e IA", level: "Desde cero", duration: "3 h 00 min", lessons: 8, color: "rose", icon: "◌", description: "Aprende a leer, ordenar y contar historias con datos usando hojas de cálculo.", instructor: "Diego Acosta", initials: "DA", lessonsList: ["Preguntas que cuentan", "Ordena tus datos", "Filtra lo importante", "Fórmulas cotidianas", "Gráficos que explican", "Encuentra patrones", "Cuenta una historia", "Tu primer informe"], quiz: { question: "¿Qué tipo de gráfico suele funcionar bien para comparar categorías?", options: ["Gráfico de barras", "Mapa de calor siempre", "Texto sin ordenar"], answer: 0, explanation: "Las barras permiten comparar cantidades entre grupos con facilidad." } },
 ];
 
 const curriculum = {
   "html-css": {
     concepts: [
-      "Un navegador solicita archivos a un servidor y los convierte en una página visible. HTML describe el contenido y CSS la presentación; por eso una misma estructura puede verse de muchas maneras.",
-      "HTML organiza información con etiquetas que tienen significado. Un documento empieza con doctype, idioma y head; dentro del body, cada sección cuenta una parte de la página.",
-      "CSS conecta reglas con elementos HTML: un selector identifica qué cambiar, una propiedad nombra el cambio y un valor lo concreta. El navegador combina las reglas para dibujar la página.",
-      "El color, el tamaño y el espaciado guían la atención. Una escala pequeña de colores y tamaños hace que el diseño se sienta coherente y facilita entender qué leer primero.",
-      "El diseño adaptable parte de una pantalla estrecha y añade espacio según lo necesite cada dispositivo. Las unidades flexibles y las media queries ayudan a que el contenido no se corte.",
-      "Un enlace lleva a otro recurso y una imagen aporta información o contexto. El texto alternativo describe imágenes importantes para lectores de pantalla y si la imagen no carga.",
-      "Una página personal comunica quién eres con una jerarquía clara, una introducción breve y una acción concreta. Probar con otra persona revela si el mensaje se entiende.",
-      "Publicar significa subir archivos estáticos a una dirección accesible. Antes de compartir, revisa enlaces, lectura en móvil, textos alternativos y que la versión publicada coincida con tu trabajo."
+      "El navegador (la aplicación donde abres sitios) muestra la página. HTML pone el contenido en orden; CSS le da color y forma.",
+      "En HTML, cada etiqueta marca una parte de la página. Por ejemplo, `<h1>` es el título principal y `<p>` es un párrafo.",
+      "CSS cambia la apariencia de la página. Una regla dice qué parte cambiar y cómo hacerlo: por ejemplo, mostrar un título en verde.",
+      "Los colores y tamaños ayudan a encontrar lo importante. Usa pocos colores y haz el título más grande que el texto normal.",
+      "Una página también debe verse bien en el teléfono. Comprueba que el texto quepa y los botones sean fáciles de pulsar.",
+      "Un enlace abre otra página. El texto alternativo explica una imagen a quien no puede verla o cuando no carga.",
+      "Una página personal presenta quién eres y cómo contactarte. Pide a alguien que encuentre esa información sin pedirle ayuda.",
+      "Publicar tu página crea un enlace para que otras personas la vean. Abre ese enlace en tu teléfono y revisa que todo funcione."
     ],
     activities: [
       "Dibuja en papel el recorrido navegador → servidor → página. Anota qué información viajaría en cada paso y explica el dibujo en voz alta.",
@@ -32,16 +32,16 @@ const curriculum = {
   },
   python: {
     concepts: [
-      "Programar es descomponer un problema en instrucciones pequeñas, explícitas y comprobables. Un buen primer paso es describir la entrada, el resultado esperado y un caso límite.",
-      "Python ejecuta instrucciones de arriba hacia abajo. `print()` muestra un resultado; los errores son pistas sobre qué línea revisar, no señales de que no sirvas para programar.",
-      "Una variable da nombre a un valor. Las cadenas representan texto, los enteros cuentan y los decimales miden; elegir el tipo correcto evita operaciones inesperadas.",
-      "`if` y `else` permiten que un programa elija según una condición verdadera o falsa. La comparación debe expresar con claridad la regla que la persona necesita.",
-      "Un bucle repite trabajo sin copiar líneas. `for` recorre elementos conocidos; `while` continúa mientras se cumpla una condición y debe avanzar para no repetirse para siempre.",
-      "Una lista conserva elementos ordenados y permite recorrerlos, añadirlos o consultarlos. Empezar por cero al acceder a un índice es una convención común en Python.",
-      "Una función reúne una tarea con nombre, entradas opcionales y un resultado. Reutilizarla reduce duplicación y permite probar partes del programa por separado.",
-      "Un conjunto de datos es una colección de observaciones. Antes de calcular, conviene contar registros, detectar valores vacíos y mirar algunos ejemplos para reconocer su forma.",
-      "Un juego de adivinanzas combina entrada del usuario, decisiones, intentos y una condición de cierre. Probar aciertos, errores y respuestas inesperadas mejora la experiencia.",
-      "Un proyecto terminado incluye instrucciones para ejecutarlo, un ejemplo y límites conocidos. Explicar cómo lo pensaste es parte de mostrar lo que aprendiste."
+      "Un programa es una lista de instrucciones para la computadora. Divide una tarea en pasos pequeños que puedas revisar uno por uno.",
+      "`print()` muestra texto en la pantalla. Escribe `print(\"Hola\")` y ejecuta el programa para ver el resultado.",
+      "Una variable guarda un dato con un nombre. Por ejemplo, `nombre = \"Ana\"` guarda el texto «Ana» para usarlo después.",
+      "`if` significa «si pasa esto». El programa revisa una condición y elige qué hacer; `else` indica qué hacer si no se cumple.",
+      "`for` repite una acción para cada elemento de una lista. `while` la repite hasta que una condición deja de cumplirse.",
+      "Una lista guarda varios datos en orden. Puedes agregar un dato y luego pedir el primero, el segundo o mostrar todos.",
+      "Una función guarda instrucciones bajo un nombre. Así puedes pedirle al programa que las repita sin volver a escribirlas.",
+      "Los datos son la información que usa el programa. Antes de calcular, mira algunos para comprobar que no falte algo.",
+      "Un juego de adivinanzas necesita una respuesta secreta, intentos y un mensaje cuando alguien acierta o se queda sin intentos.",
+      "Un proyecto está listo cuando otra persona sabe cómo ejecutarlo y entiende para qué sirve. Escribe los pasos y pruébalos con esa persona."
     ],
     activities: [
       "Elige una tarea cotidiana, como preparar una merienda. Escribe seis instrucciones sin ambigüedad y marca qué datos de entrada y resultado produce.",
@@ -58,13 +58,13 @@ const curriculum = {
   },
   figma: {
     concepts: [
-      "Diseñar una interfaz comienza con una necesidad concreta, no con colores. Una persona, una tarea y una situación ayudan a decidir qué información necesita aparecer primero.",
-      "Un frame representa una pantalla y las capas organizan sus elementos. Nombrar capas y agrupar piezas relacionadas hace que el archivo se pueda compartir y modificar.",
-      "El contraste facilita percibir diferencias y entender estados. Comprobar texto pequeño sobre su fondo evita que una paleta bonita resulte difícil de leer.",
-      "La tipografía crea jerarquía. Limitar familias y tamaños, usar pesos con intención y cuidar el interlineado hace que el contenido se pueda recorrer de un vistazo.",
-      "Un componente representa una pieza repetible; una variante describe sus estados. Cambiar el componente principal actualiza sus instancias y evita diseños inconsistentes.",
-      "Una aplicación se entiende mejor como un flujo de tareas que como pantallas aisladas. Los bocetos y las conexiones ayudan a descubrir pasos confusos antes de pulir.",
-      "Un prototipo conecta pantallas y simula acciones; una prueba breve valida si el flujo es comprensible. Observar dónde se atasca alguien vale más que explicar el diseño."
+      "Antes de diseñar, decide quién usará la pantalla y qué quiere hacer. Eso te dice qué información debe aparecer primero.",
+      "En Figma, un marco es una pantalla y las capas son las piezas que contiene. Ponles nombres para reconocerlas después.",
+      "El contraste es la diferencia entre el texto y su fondo. Asegúrate de que las letras se lean con facilidad.",
+      "Usa letras grandes para los títulos y más pequeñas para los detalles. Así se entiende qué leer primero.",
+      "Un componente es una pieza, como un botón, que puedes reutilizar. Si lo cambias, se actualizan las copias.",
+      "Muestra los pasos que sigue una persona para completar una tarea. Cada paso puede ser una pantalla de la aplicación.",
+      "Un prototipo conecta las pantallas para que otra persona lo pruebe. Observa si encuentra los botones y puede completar su tarea."
     ],
     activities: [
       "Escribe para quién diseñas y qué tarea intenta completar. Dibuja en tres cajas la información imprescindible antes de abrir la herramienta.",
@@ -78,18 +78,18 @@ const curriculum = {
   },
   javascript: {
     concepts: [
-      "JavaScript permite que una página responda a datos y acciones. En el navegador puede leer elementos, escuchar eventos y cambiar lo que se muestra sin recargar.",
-      "Una variable con `const` conserva una referencia y `let` permite reasignar. Los tipos básicos y nombres que expresan intención hacen el comportamiento más fácil de seguir.",
-      "El usuario escribe texto, aunque parezca un número. Convertir y validar antes de calcular evita que una suma termine uniendo cadenas o acepte un campo vacío.",
-      "Un evento comunica que pasó algo, como un clic o un envío. Un listener conecta ese evento con una función y permite responder de manera ordenada.",
-      "Una condición representa una regla del producto. Es útil probar la condición verdadera, la falsa y valores de frontera, no solo el camino esperado.",
-      "Un array guarda una secuencia y métodos como `map` o `filter` producen vistas nuevas a partir de sus elementos. No hace falta copiar tarjetas a mano.",
-      "Una función pone nombre a una tarea, acepta parámetros y devuelve un resultado. Las funciones pequeñas permiten reutilizar lógica y revisar errores con precisión.",
-      "El DOM es la representación de la página que JavaScript puede consultar. Seleccionar el elemento adecuado y actualizar solo lo necesario mantiene la interfaz predecible.",
-      "Un formulario emite un envío y sus campos tienen valores que se pueden leer. Evitar la recarga y mostrar una confirmación conecta el formulario con la interfaz.",
-      "Un contador combina estado y representación: cada clic cambia un valor y después actualiza el texto visible. Una sola fuente de verdad evita números desincronizados.",
-      "Un juego requiere reglas, estado y retroalimentación. Separar preparar una ronda, evaluar una acción y mostrar el resultado facilita cambiar el juego luego.",
-      "Una experiencia interactiva se completa al considerar teclado, mensajes claros y situaciones límite. Consola y pruebas manuales te ayudan a revisar esos caminos."
+      "JavaScript hace que una página responda cuando alguien pulsa un botón o escribe algo. El navegador ejecuta estas instrucciones.",
+      "`const` crea un nombre para un dato que no cambiará. Usa `let` cuando necesites que ese dato cambie.",
+      "Lo que escribes en un campo llega como texto. Comprueba que haya un número antes de hacer una suma.",
+      "Un evento avisa que alguien hizo algo, como pulsar un botón. El programa recibe ese aviso y realiza una acción.",
+      "`if` hace que el programa elija según una regla. Comprueba qué pasa cuando la regla se cumple y cuando no.",
+      "Una lista (array) guarda varios elementos. `map` prepara algo para cada elemento y `filter` selecciona solo algunos.",
+      "Una función guarda instrucciones que puedes usar más de una vez. Dale un nombre que explique lo que hace.",
+      "El DOM es la lista de elementos de una página que JavaScript puede cambiar. Por ejemplo, puedes cambiar el texto de un título.",
+      "Un formulario reúne lo que escribe una persona. Al pulsar «Enviar», muestra el resultado y evita recargar la página.",
+      "El contador guarda un número. Cada botón cambia ese número y muestra el nuevo resultado.",
+      "Un juego tiene reglas, una respuesta a cada jugada y una forma de volver a empezar. Prueba los casos correctos e incorrectos.",
+      "Prueba tu página con el teclado y con el ratón. Comprueba que los mensajes se entiendan y los botones funcionen."
     ],
     activities: [
       "Crea un botón que muestre un mensaje al pulsarlo. Antes de escribir código, señala qué elemento escucha y qué respuesta debería ver la persona.",
@@ -108,12 +108,12 @@ const curriculum = {
   },
   ia: {
     concepts: [
-      "La IA generativa produce contenido a partir de patrones aprendidos; no comprende como una persona ni garantiza que cada respuesta sea cierta. La tarea determina si conviene usarla.",
-      "Un modelo ajusta patrones a partir de ejemplos de entrenamiento y genera una continuación probable. Puede repetir errores o sesgos, así que los resultados necesitan criterio humano.",
-      "Un prompt útil define objetivo, contexto, audiencia, restricciones y formato. Pedir una primera versión y corregirla suele ser mejor que esperar una respuesta perfecta al primer intento.",
-      "Las herramientas de generación de imágenes responden a composición, tema, estilo y encuadre. Iterar con una idea cada vez permite notar qué instrucción tuvo efecto.",
-      "Los sistemas pueden inventar datos, exponer información y reflejar sesgos. No compartas información confidencial y verifica las afirmaciones importantes con fuentes confiables.",
-      "Un asistente personal funciona mejor con una tarea delimitada, contexto no sensible y revisión final. La persona usuaria sigue siendo responsable de las decisiones y resultados."
+      "Una IA puede crear texto e imágenes a partir de ejemplos que ha visto. No piensa como una persona y puede equivocarse.",
+      "La IA busca parecidos con los ejemplos que aprendió y produce una respuesta probable. Una respuesta que suena segura también puede ser falsa.",
+      "Un prompt es la instrucción que escribes para la IA. Di qué necesitas, para quién y cómo quieres la respuesta.",
+      "Para pedir una imagen, describe qué debe aparecer y cómo debe verse. Cambia una parte de la descripción para comparar el resultado.",
+      "No compartas contraseñas, datos personales ni información privada con una IA. Comprueba los datos importantes antes de usarlos.",
+      "Pide ayuda con una tarea concreta, usando información inventada. Revisa y corrige el resultado antes de compartirlo."
     ],
     activities: [
       "Elige una tarea sencilla y anota qué aporta una herramienta generativa y qué necesita seguir haciendo una persona. Define cuándo preferirías no usarla.",
@@ -126,14 +126,14 @@ const curriculum = {
   },
   datos: {
     concepts: [
-      "Un análisis útil comienza con una pregunta que podría cambiar una decisión. Definir qué cuenta como observación y qué mide cada columna evita conclusiones vagas.",
-      "Cada columna describe una variable y cada fila suele representar un registro. Formatos consistentes y nombres claros permiten ordenar la tabla sin perder significado.",
-      "Filtrar reduce la vista, no los datos originales. Comparar segmentos requiere usar la misma definición y recordar cuántas observaciones quedaron fuera.",
-      "Una fórmula expresa una regla que se repite. Probarla en casos sencillos antes de copiarla en una columna completa evita que un error se propague.",
-      "Un gráfico debe responder una pregunta específica. Barras comparan categorías, líneas muestran cambios en el tiempo; etiquetas y escalas ayudan a interpretarlos.",
-      "Un patrón observado no explica por sí solo su causa. Fechas, grupos pequeños, datos faltantes y otras variables pueden cambiar la lectura inicial.",
-      "Una buena historia con datos presenta la pregunta, una evidencia visible y un límite. No ocultar incertidumbre hace la conclusión más confiable.",
-      "Un informe resume métodos, hallazgos y próximos pasos. Un lector debería poder distinguir los datos observados de la recomendación."
+      "Primero, escribe la pregunta que quieres responder. Luego decide qué información necesitas para responderla.",
+      "En una tabla, cada fila contiene un dato y cada columna describe qué es ese dato. Usa nombres claros y el mismo formato.",
+      "Un filtro muestra solo las filas que cumplen una condición. Revisa cuántas filas quedan antes de comparar los resultados.",
+      "Una fórmula hace un cálculo automáticamente. Pruébala con pocos datos y comprueba el resultado antes de usarla en toda la tabla.",
+      "Las barras comparan grupos. Las líneas muestran cambios a través del tiempo. Pon nombres para explicar qué muestra el gráfico.",
+      "Que dos cosas pasen a la vez no significa que una cause la otra. Revisa si faltan datos antes de explicar un resultado.",
+      "Para explicar lo que encontraste, di qué querías saber y qué datos viste. También aclara qué no puedes concluir.",
+      "Un informe corto explica la pregunta, lo que encontraste y qué harías después. Separa los datos de tu recomendación."
     ],
     activities: [
       "Formula una pregunta concreta sobre una actividad cotidiana. Decide qué dato la respondería y crea una pequeña tabla ficticia para explorarlo.",
@@ -160,6 +160,8 @@ let activeCategory = "Todos";
 let lessonResponses = new Map(JSON.parse(localStorage.getItem("prisma-lesson-responses") || "[]"));
 let lessonAnswers = new Map(JSON.parse(localStorage.getItem("prisma-lesson-answers") || "[]"));
 let pendingQuizAnswer = null;
+let demoStep = 0;
+let demoTimer = null;
 let toastTimer;
 
 const grid = document.querySelector("#course-grid");
@@ -191,6 +193,7 @@ function renderCourses() {
 }
 
 function renderLesson() {
+  stopDemo();
   const course = activeCourse;
   const lessonName = course.lessonsList[activeLesson];
   const done = progress.has(`${course.id}:${activeLesson}`);
@@ -198,6 +201,8 @@ function renderLesson() {
   const lessonKey = `${course.id}:${activeLesson}`;
   const lesson = curriculum[course.id];
   const completedLessons = [...progress].filter((key) => key.startsWith(`${course.id}:`)).length;
+  const demo = createLessonDemo(course, activeLesson);
+  demoStep = 0;
   document.querySelector("#dialog-content").innerHTML = `
     <div class="lesson-heading"><span class="lesson-category">${course.category} / ${course.level}</span><h2 id="dialog-title">${course.title}</h2><p>${course.description}</p></div>
     <div class="lesson-layout">
@@ -206,21 +211,44 @@ function renderLesson() {
       </aside>
       <div class="lesson-main">
         <div class="lesson-progress-label">TU AVANCE <span>${completedLessons} de ${course.lessonsList.length} lecciones completadas</span></div><div class="lesson-progress-track"><i style="width:${(completedLessons / course.lessonsList.length) * 100}%"></i></div>
-        <div class="lesson-player"><div class="player-orb">✳</div><span class="player-caption">UNA IDEA A LA VEZ</span><div class="player-controls"><span>▶</span><div class="player-progress"><i></i></div><span>04:32</span><span>⛶</span></div></div>
-        <div class="lesson-text"><div class="lesson-number">LECCIÓN ${String(activeLesson + 1).padStart(2, "0")} <span>·</span> ${course.duration}</div><h3>${lessonName}</h3>
-          <div class="lesson-explanation"><span>IDEA CLAVE</span><p>${lesson.concepts[activeLesson]}</p></div>
-          <section class="lesson-activity"><div class="activity-kicker">PRÁCTICA GUIADA · 10–20 MIN</div><h4>Apréndelo haciendo</h4><p>Prepara <strong>${courseProject(course.id)}</strong> y avanza con estos pasos:</p><ol>${lesson.activities[activeLesson].split(". ").filter(Boolean).map((step) => `<li>${step.endsWith(".") ? step : `${step}.`}</li>`).join("")}</ol>
-            <label for="activity-response">¿Qué hiciste, qué resultado obtuviste y qué cambiarías en el siguiente intento?</label>
+        <section class="lesson-demo" aria-labelledby="demo-title">
+          <div class="demo-header"><div><span class="demo-kicker">GUÍA INTERACTIVA · 3 PASOS</span><h4 id="demo-title">Mira estos 3 pasos</h4></div><span class="demo-not-video">No hay video grabado: el control anterior no reproducía nada. Esta guía visual sí cambia al avanzar los pasos. <a href="#lesson-practice">Ir a la práctica</a>.</span></div>
+          <div class="demo-board" aria-live="polite"><span class="demo-step-count" id="demo-step-count">PASO 1 DE 3</span><h5 id="demo-step-title"></h5><p id="demo-step-copy"></p></div>
+          <div class="demo-controls"><button class="demo-button demo-play" id="demo-play" type="button" aria-pressed="false">▶ <span>Avanzar automáticamente</span></button><button class="demo-button" id="demo-prev" type="button" aria-label="Ver paso anterior">← Anterior</button><button class="demo-button" id="demo-next" type="button">Siguiente →</button><span class="demo-position" id="demo-position">1 / 3</span></div>
+          <div class="demo-track"><i id="demo-track-fill"></i></div>
+        </section>
+        <div class="lesson-text"><div class="lesson-number">LECCIÓN ${String(activeLesson + 1).padStart(2, "0")} DE ${course.lessonsList.length}</div><h3>${lessonName}</h3>
+          <div class="lesson-explanation"><span>QUÉ SIGNIFICA</span><p>${escapeHTML(lesson.concepts[activeLesson])}</p></div>
+          <section class="lesson-activity" id="lesson-practice" tabindex="-1"><div class="activity-kicker">TU TURNO · 10–20 MIN</div><h4>Haz esta práctica</h4><p><strong>Necesitas:</strong> ${escapeHTML(courseMaterials(course.id, activeLesson))}. <strong>Proyecto final del curso:</strong> ${escapeHTML(courseProject(course.id))}.</p><ol>${splitActivitySteps(lesson.activities[activeLesson]).map((step) => `<li>${escapeHTML(step)}</li>`).join("")}</ol>
+            <label for="activity-response">Escribe qué hiciste y qué pasó. Si algo no funcionó, anota tu duda.</label>
             <textarea id="activity-response" maxlength="1200" placeholder="Escribe aquí tus notas, un resultado o la parte que te costó...">${escapeHTML(lessonResponses.get(lessonKey) ?? "")}</textarea>
             <div class="activity-response-footer"><span id="draft-status">${done ? (configured && currentUser ? "Práctica sincronizada con tu cuenta." : "Práctica guardada en este dispositivo.") : lessonResponses.has(lessonKey) ? "Borrador guardado en este dispositivo." : "Tu respuesta se guarda cuando completes la lección."}</span><span id="response-count">${(lessonResponses.get(lessonKey) ?? "").length}/1200</span></div>
           </section>
-          <div class="lesson-callout"><span>✦</span><p><strong>Reflexiona:</strong> ${lessonReflection(lessonName, course.category)}</p></div>
+          <div class="lesson-callout"><span>✦</span><p><strong>Comprueba que lo entendiste:</strong> ${lessonReflection(lessonName, course.category)}</p></div>
           ${isLast ? renderQuiz(course) : ""}
           <div class="lesson-actions"><button class="button button-dark" id="complete-lesson" type="button">${done ? "Guardar cambios y completar ✓" : "Guardar práctica y completar"} <span aria-hidden="true">→</span></button>${!isLast ? `<button class="text-link" id="next-lesson" type="button">Siguiente lección <span aria-hidden="true">→</span></button>` : ""}</div>
         </div>
       </div>
     </div>`;
   document.querySelectorAll("[data-lesson]").forEach((button) => button.addEventListener("click", () => { activeLesson = Number(button.dataset.lesson); renderLesson(); }));
+  document.querySelector(".demo-not-video a").addEventListener("click", (event) => {
+    event.preventDefault();
+    const practice = document.querySelector("#lesson-practice");
+    practice.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    document.querySelector("#activity-response").focus({ preventScroll: true });
+  });
+  renderDemo(demo);
+  document.querySelector("#demo-play").addEventListener("click", () => toggleDemo(demo));
+  document.querySelector("#demo-prev").addEventListener("click", () => {
+    stopDemo();
+    demoStep = Math.max(0, demoStep - 1);
+    renderDemo(demo);
+  });
+  document.querySelector("#demo-next").addEventListener("click", () => {
+    stopDemo();
+    demoStep = Math.min(demo.length - 1, demoStep + 1);
+    renderDemo(demo);
+  });
   document.querySelector("#complete-lesson").addEventListener("click", () => completeLesson(course, activeLesson));
   document.querySelector("#activity-response").addEventListener("input", (event) => {
     lessonResponses.set(lessonKey, event.currentTarget.value);
@@ -235,7 +263,9 @@ function renderLesson() {
     const selected = Number(new FormData(event.currentTarget).get("answer"));
     const result = document.querySelector("#quiz-result");
     const correct = selected === course.quiz.answer;
-    result.textContent = correct ? "¡Exacto! Ya tienes una idea más clara." : "Casi. Revisa la lección y vuelve a intentarlo.";
+    result.textContent = correct
+      ? `Correcto. ${course.quiz.explanation}`
+      : `No es esa. La respuesta correcta es «${course.quiz.options[course.quiz.answer]}». ${course.quiz.explanation}`;
     result.className = `quiz-result ${correct ? "correct" : "incorrect"}`;
     if (correct) {
       if (!configured) {
@@ -256,6 +286,70 @@ function renderLesson() {
       else if (await saveProgress(course, activeLesson, selected, lessonResponses.get(lessonKey) ?? "")) renderLesson();
     }
   });
+}
+
+function createLessonDemo(course, lessonIndex) {
+  const lesson = curriculum[course.id];
+  const instruction = splitActivitySteps(lesson.activities[lessonIndex])[0];
+  return [
+    { title: "Entiende la idea", text: lesson.concepts[lessonIndex] },
+    { title: "Haz una prueba", text: instruction },
+    { title: "Revisa el resultado", text: lessonReflection(course.lessonsList[lessonIndex], course.category) },
+  ];
+}
+
+function splitActivitySteps(text) {
+  const steps = [];
+  let start = 0;
+  for (let index = 0; index < text.length; index += 1) {
+    if (".!?".includes(text[index]) && (index === text.length - 1 || /\s/.test(text[index + 1]))) {
+      const step = text.slice(start, index + 1).trim();
+      if (step) steps.push(step);
+      start = index + 1;
+    }
+  }
+  const remaining = text.slice(start).trim();
+  if (remaining) steps.push(remaining);
+  return steps;
+}
+
+function renderDemo(steps) {
+  const titles = document.querySelector("#demo-step-title");
+  if (!titles) return;
+  const step = steps[demoStep];
+  document.querySelector("#demo-step-count").textContent = `PASO ${demoStep + 1} DE ${steps.length}`;
+  titles.textContent = step.title;
+  document.querySelector("#demo-step-copy").textContent = step.text;
+  document.querySelector("#demo-position").textContent = `${demoStep + 1} / ${steps.length}`;
+  document.querySelector("#demo-track-fill").style.width = `${((demoStep + 1) / steps.length) * 100}%`;
+  document.querySelector("#demo-prev").disabled = demoStep === 0;
+  document.querySelector("#demo-next").disabled = demoStep === steps.length - 1;
+  const playButton = document.querySelector("#demo-play");
+  playButton.setAttribute("aria-pressed", String(Boolean(demoTimer)));
+  playButton.innerHTML = `${demoTimer ? "Ⅱ" : "▶"} <span>${demoTimer ? "Pausar avance" : "Avanzar automáticamente"}</span>`;
+}
+
+function stopDemo() {
+  clearInterval(demoTimer);
+  demoTimer = null;
+}
+
+function toggleDemo(steps) {
+  if (demoTimer) {
+    stopDemo();
+    renderDemo(steps);
+    return;
+  }
+  if (demoStep === steps.length - 1) demoStep = 0;
+  demoTimer = setInterval(() => {
+    if (demoStep === steps.length - 1) {
+      stopDemo();
+    } else {
+      demoStep += 1;
+    }
+    renderDemo(steps);
+  }, 4000);
+  renderDemo(steps);
 }
 
 function escapeHTML(value) {
@@ -280,8 +374,23 @@ function courseProject(courseId) {
   return projects[courseId];
 }
 
+function courseMaterials(courseId, lessonIndex) {
+  if (lessonIndex === 0 && ["html-css", "python", "figma", "datos"].includes(courseId)) {
+    return "papel y lápiz";
+  }
+  const materials = {
+    "html-css": "papel y lápiz. Cuando escribas código, necesitarás un navegador y un editor de texto",
+    python: "papel y lápiz. Para probar Python, usa un editor de Python en el navegador; no necesitas instalarlo",
+    figma: "papel y lápiz. Para probar Figma, crea una cuenta gratuita en figma.com",
+    javascript: "papel y lápiz. Para probar JavaScript, usa un navegador y un editor de texto",
+    ia: "papel y lápiz. Para probar una IA, usa ejemplos inventados; no escribas datos privados",
+    datos: "papel y lápiz. Para hacer la tabla, usa una hoja de cálculo",
+  };
+  return materials[courseId];
+}
+
 function lessonReflection(lessonName, category) {
-  return `al probar «${lessonName}», ¿qué decisión tomaste y cómo comprobarías que funciona para otra persona que recién empieza en ${category.toLowerCase()}?`;
+  return `¿Qué aprendiste al probar «${lessonName}»? Explícaselo en una frase a alguien que empieza.`;
 }
 
 function persistLessonResponses() {
@@ -296,7 +405,7 @@ function persistLessonResponses() {
 
 function renderQuiz(course) {
   const savedAnswer = lessonAnswers.get(`${course.id}:${activeLesson}`);
-  return `<section class="quiz"><div class="lesson-number">PUNTO DE CONTROL FINAL</div><h4>${course.quiz.question}</h4><p>Elige tu respuesta y revisa lo aprendido antes de cerrar este curso.</p><form id="quiz-form">${course.quiz.options.map((option, index) => `<label class="quiz-option"><input type="radio" name="answer" value="${index}" ${savedAnswer === index ? "checked" : ""} required /><span>${option}</span></label>`).join("")}<button class="button button-outline" type="submit">Comprobar mi respuesta →</button></form><p id="quiz-result" class="quiz-result" role="status">${savedAnswer === course.quiz.answer ? "¡Punto de control superado!" : ""}</p></section>`;
+  return `<section class="quiz"><div class="lesson-number">PUNTO DE CONTROL FINAL</div><h4>${escapeHTML(course.quiz.question)}</h4><p>Elige tu respuesta y revisa lo aprendido antes de cerrar este curso.</p><form id="quiz-form">${course.quiz.options.map((option, index) => `<label class="quiz-option"><input type="radio" name="answer" value="${index}" ${savedAnswer === index ? "checked" : ""} required /><span>${escapeHTML(option)}</span></label>`).join("")}<button class="button button-outline" type="submit">Comprobar mi respuesta →</button></form><p id="quiz-result" class="quiz-result" role="status">${savedAnswer === course.quiz.answer ? "¡Punto de control superado!" : ""}</p></section>`;
 }
 
 async function completeLesson(course, lessonIndex) {
@@ -482,7 +591,11 @@ grid.addEventListener("click", (event) => {
   const trigger = event.target.closest("[data-open-course]");
   if (trigger) openCourse(trigger.dataset.openCourse);
 });
-document.querySelectorAll(".dialog-close").forEach((button) => button.addEventListener("click", () => button.closest("dialog").close()));
+document.querySelectorAll(".dialog-close").forEach((button) => button.addEventListener("click", () => {
+  if (button.closest("#course-dialog")) stopDemo();
+  button.closest("dialog").close();
+}));
+courseDialog.addEventListener("close", stopDemo);
 document.querySelector("#auth-form").addEventListener("submit", handleAuth);
 document.querySelector("#auth-switch").addEventListener("click", () => setAuthMode(authMode === "signin" ? "signup" : "signin"));
 document.querySelector("#menu-toggle").addEventListener("click", (event) => {
