@@ -1,6 +1,12 @@
 # Prisma — aprende tecnología haciendo
 
-Plataforma educativa en español, construida como sitio estático para publicar en GitHub Pages. Incluye catálogo filtrable, detalle de cursos con lecciones, cuestionarios breves y registro/inicio de sesión con guardado de progreso en Supabase.
+Plataforma educativa en español, construida como sitio estático para publicar en GitHub Pages. Incluye catálogo filtrable, seis cursos con 51 lecciones, actividades prácticas paso a paso, preguntas de reflexión, puntos de control, registro/inicio de sesión y guardado de progreso en Supabase.
+
+## Cursos y participación
+
+Cada lección incluye una explicación de su idea clave, una práctica guiada relacionada con un proyecto final del curso y una pregunta para reflexionar sobre el resultado. Escribe qué probaste y qué aprendiste para completar la práctica; el borrador se conserva en este navegador. Al completar la lección, la respuesta y el avance se guardan en la nube si iniciaste sesión con Supabase; sin configuración, quedan en este dispositivo. Cada curso termina con un cuestionario corto de repaso.
+
+Los proyectos finales son una página personal publicada, un juego hecho con Python, un prototipo móvil en Figma, una página interactiva, un flujo de asistente para una tarea cotidiana y un informe con datos, respectivamente.
 
 ## Probar localmente
 
@@ -9,7 +15,7 @@ Abre `index.html` en un navegador o sirve la carpeta con cualquier servidor est�
 ## Activar cuentas y progreso en la nube
 
 1. Crea un proyecto en [Supabase](https://supabase.com/dashboard) y espera a que termine de aprovisionarse.
-2. En **SQL Editor**, ejecuta el contenido de [`supabase/schema.sql`](supabase/schema.sql). La tabla guarda el progreso por usuario, curso y lección; las políticas RLS hacen que cada estudiante solo pueda consultar y modificar sus propias filas.
+2. En **SQL Editor**, ejecuta el contenido de [`supabase/schema.sql`](supabase/schema.sql). La tabla guarda el progreso por usuario, curso y lección, la respuesta del punto de control y la reflexión de la práctica; las políticas RLS hacen que cada estudiante solo pueda consultar y modificar sus propias filas.
 3. En **Project Settings → API** (o **Connect**), copia el **Project URL** y la clave **anon/public**. Pégalos en `supabase-config.js`:
 
    ```js
@@ -25,6 +31,13 @@ Abre `index.html` en un navegador o sirve la carpeta con cualquier servidor est�
 La clave `anon`/public está diseñada para usarse en el navegador junto con políticas RLS. **Nunca** incluyas la clave `service_role` en este repositorio, en `supabase-config.js` ni en código de cliente: omite las políticas de seguridad.
 
 Si las credenciales están vacías, el catálogo y las lecciones de demostración siguen disponibles; iniciar sesión y guardar progreso mostrarán un aviso para completar esta configuración. Las lecciones y cuestionarios son contenido de muestra listo para reemplazarse por material definitivo.
+
+Si tu proyecto ya tenía la tabla `course_progress`, no vuelvas a crear sus políticas existentes. Ejecuta primero esta migración para añadir el campo que guardará las respuestas de las prácticas:
+
+```sql
+alter table public.course_progress
+  add column if not exists reflection_response text not null default '';
+```
 
 ## Publicar en GitHub Pages
 

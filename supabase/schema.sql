@@ -5,9 +5,13 @@ create table if not exists public.course_progress (
   lesson_id integer not null check (lesson_id >= 0),
   completed boolean not null default false,
   quiz_answer integer,
+  reflection_response text not null default '',
   updated_at timestamptz not null default now(),
   primary key (user_id, course_id, lesson_id)
 );
+
+alter table public.course_progress
+  add column if not exists reflection_response text not null default '';
 
 alter table public.course_progress enable row level security;
 
